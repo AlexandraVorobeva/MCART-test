@@ -1,6 +1,6 @@
 # mcart-test
 ## FASTAPI CRUD application.
-REST API application for exchange rate with authentication.<br>
+REST API application for exchange rate.<br>
 
 ### Stack of technologies:<br>
 -Python >= 3.9<br>
