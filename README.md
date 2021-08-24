@@ -17,10 +17,10 @@ very high performance, minimize code duplication.
 3.Getting the difference in the exchange rate (ruble) between two dates.<br>
 
 ### APIs endpoints:<br>
-| requests | url | description  |
-| ------- | --- | --- |
-| GET | /currency/all | list of currencies of the world |
-| GET | /currency/difference| difference in the exchange rate |
+| requests | url | url parameters| description  |
+| ------- | --- | --- | --- |
+| GET | /currency/all | --- | list of currencies of the world |
+| GET | /currency/difference| ?character_code_of_currency=USD&day1=2021-08-05&day2=2019-08-05 | difference in the exchange rate between two dates |
 
 
 
