@@ -46,7 +46,7 @@ $ docker run --name mycontainer -p 8000:8000 myimage <br>
 You can work on the API directly in your browser.<br>
 You will see the automatic interactive API documentation (provided by Swagger UI).
 http://127.0.0.1:8000/docs <br>
-![Screenshot](https://github.com/SparklingAcidity/MCART-test/blob/in_process/img_for_readme/1.png) <br>
-![Screenshot](https://github.com/SparklingAcidity/MCART-test/blob/in_process/img_for_readme/2.png) <br>
+![Screenshot](https://github.com/SparklingAcidity/MCART-test/blob/main/img_for_readme/1.png) <br>
+![Screenshot](https://github.com/SparklingAcidity/MCART-test/blob/main/img_for_readme/2.png) <br>
 or http://127.0.0.1:8000/redoc
-![Screenshot](https://github.com/SparklingAcidity/MCART-test/blob/in_process/img_for_readme/3.png)
+![Screenshot](https://github.com/SparklingAcidity/MCART-test/blob/main/img_for_readme/3.png)
