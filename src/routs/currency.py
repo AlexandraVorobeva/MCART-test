@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from ..services.currency import fetch_all_currencies, compare_curreny
+from ..services.currency import fetch_all_currencies, compare_currency
 
 
 router = APIRouter(prefix="/currency")
@@ -19,4 +19,4 @@ def get_rub_difference(character_code_of_currency: str, day1: str, day2: str):
 
     Currency must be sent like character code: USD, EUR.
     """
-    return compare_curreny(character_code_of_currency, day1, day2)
+    return compare_currency(character_code_of_currency, day1, day2)

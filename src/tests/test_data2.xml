@@ -1,0 +1,18 @@
+<Valuta name="Foreign Currency Market Lib">
+    <Item ID="R01020A">
+        <Name>Азербайджанский манат</Name>
+        <EngName>Azerbaijan Manat</EngName>
+        <Nominal>1</Nominal>
+        <ParentCode>R01020    </ParentCode>
+        <ISO_Num_Code>944</ISO_Num_Code>
+        <ISO_Char_Code>AZN</ISO_Char_Code>
+    </Item>
+    <Item ID="R01035">
+        <Name>Фунт стерлингов Соединенного королевства</Name>
+        <EngName>British Pound Sterling</EngName>
+        <Nominal>1</Nominal>
+        <ParentCode>R01035    </ParentCode>
+        <ISO_Num_Code>826</ISO_Num_Code>
+        <ISO_Char_Code>GBP</ISO_Char_Code>
+    </Item>
+</Valuta>
