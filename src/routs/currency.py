@@ -1,5 +1,4 @@
-import os
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException
 import datetime
 from ..services.currency import fetch_all_currencies, compare_currency
 import requests_cache
@@ -32,4 +31,3 @@ def get_rub_difference(character_code_of_currency: str, day1: str, day2: str):
     except ValueError:
         raise HTTPException(status_code=400, detail="Incorrect format of 'days'")
     return compare_currency(character_code_of_currency, day1, day2)
-
