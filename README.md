@@ -40,7 +40,7 @@ $ source venv/bin/activate<br>
 $ pip install -r requirements.txt<br>
 
 ### Run the sample server:<br>
-$ uvicorn app:app --reload<br>
+$ uvicorn src:app --reload<br>
 
 ### Run tests:<br>
 $ pytest<br>
