@@ -32,11 +32,18 @@ very high performance, minimize code duplication.
 $ git clone https://github.com/SparklingAcidity/MCART-test<br>
 $ cd mcart-test<br>
 
-### Build your FastAPI image:
-$ docker build -t myimage . <br>
+### Create virtualenv:<br>
+$ virtualenv venv<br>
+$ source venv/bin/activate<br>
 
-### Run a container based on your image:
-$ docker run --name mycontainer -p 8000:8000 myimage <br>
+### Dependency
+$ pip install -r requirements.txt<br>
+
+### Run the sample server:<br>
+$ uvicorn src.main:app --reload <br>
+
+### Run tests:<br>
+$ pytest<br>
 
 
 
