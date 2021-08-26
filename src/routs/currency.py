@@ -1,21 +1,25 @@
 import os
-from fastapi import APIRouter, HTTPException, Request, Response
+from fastapi import APIRouter, HTTPException, Depends
 import datetime
 from ..services.currency import fetch_all_currencies, compare_currency
-from fastapi_redis_cache import cache
+import requests_cache
+from requests_cache import CachedSession
 
 
 router = APIRouter(prefix="/currency")
 
 
+session = CachedSession()
+requests_cache.install_cache(expire_after=360, allowable_methods=('GET', 'POST'))
+
+
 @router.get("/all")
-@cache(expire=360)
 def get_list_of_all_currencies():
+    with requests_cache.enabled():
         return fetch_all_currencies()
 
 
 @router.get("/difference")
-@cache(expire=60)
 def get_rub_difference(character_code_of_currency: str, day1: str, day2: str):
     """Getting the difference in the exchange rate (ruble) between two dates.
 
